@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{ISO8601} %-5level [%thread] %logger{0}.%method:%L - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="ERROR">
+        <appender-ref ref="STDOUT" />
+    </root>
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="tabdulin.demo.rainyhills" level="INFO"/>
+</configuration>
